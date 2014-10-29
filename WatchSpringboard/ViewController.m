@@ -118,6 +118,10 @@
   
   [[self customView].respringButton addTarget:self action:@selector(LM_respringTapped:) forControlEvents:UIControlEventTouchUpInside];
   [self springboard].alpha = 0;
+    
+    UIVisualEffectView *blurView = [[UIVisualEffectView alloc] initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleLight]];
+    blurView.frame =  CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 20);
+    [self.view addSubview:blurView];
   
   for(LMSpringboardItemView* item in [self springboard].itemViews)
   {

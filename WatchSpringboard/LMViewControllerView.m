@@ -118,6 +118,7 @@
     CGRect fullFrame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
     UIViewAutoresizing mask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     
+      
     UIImageView* bg = [[UIImageView alloc] initWithFrame:fullFrame];
     bg.image = [UIImage imageNamed:@"Wallpaper.png"];
     bg.contentMode = UIViewContentModeScaleAspectFill;
